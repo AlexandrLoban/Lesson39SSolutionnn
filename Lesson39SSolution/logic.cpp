@@ -2,7 +2,7 @@
 
 bool check_number(long long number) {
 	
-
+	
 	if (number < 0) {
 		number *= -1;
 	}
@@ -22,8 +22,6 @@ bool check_number(long long number) {
 		}
 
 	}
-
-
 
 	return true;
 }
