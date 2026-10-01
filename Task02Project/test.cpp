@@ -1,12 +1,10 @@
 #include "test.h";
 
 void test(int number, int expected, string test_name) {
-	bool actual = reverse(number);
+	int actual = reverse(number);
 	string msg = test_name + " --->";
-
 	msg += actual == expected ? "PASS" : "FAIL";
 	cout << msg << endl;
-
 }
 
 
@@ -20,6 +18,4 @@ void run_all_tests() {
 	test(0, 0, "test06");
 	test(6, 6, "test07");
 	test(-6, -6, "test08");
-
-
 }
