@@ -7,8 +7,10 @@ bool check_number(long long number) {
 		number *= -1;
 	}
 
+	bool result = true;
+
 	if (number >= 0 and number < 10) {
-		return false;
+		result =  false;
 	}
 
 	int i = 0;
@@ -18,10 +20,11 @@ bool check_number(long long number) {
 		int digit2 = number % 10;
 
 		if (digit1 != digit2) {
-			return false;
+			result = false;
+			break;
 		}
 
 	}
 
-	return true;
+	return result;
 }
